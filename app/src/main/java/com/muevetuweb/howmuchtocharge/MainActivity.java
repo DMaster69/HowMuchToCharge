@@ -2,11 +2,17 @@ package com.muevetuweb.howmuchtocharge;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.internal.widget.AdapterViewCompat;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
+    private Spinner spn1,spn2,spn3,spn4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,6 +1,49 @@
 <resources>
     <string name="app_name">HowMuchToCharge</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="app_title">¿Cuanto cobrar por un desarrollo?</string>
     <string name="action_settings">Settings</string>
+    <string name="YourCosts">Costos</string>
+    <string name="clientType">Tipo de Cliente</string>
+    <string name="prestigeValue">Tu Prestigio</string>
+    <string name="projectImpact">Impacto</string>
+    <string name="competition">Competencia</string>
+    
+    <string-array name="ClientType">
+        <!--Qué tan solvente es el Cliente o… Qué tan grande es el Pájaro.-->
+        <item>1.00</item><!-- Empresa Pequeña, de pocos empleados, trabaja vive y deja vivir. -->
+        <item>1.20</item><!-- Empresa Mediana a grande,buena solvencia economica, notiene muchos Empleados, no es lider en su industria. -->
+        <item>1.50</item><!-- Corporativo de mucho dinero, tiene varias descenas de empleados, bonitas oficinas, es reconocido como uno de los lideres en su industria. -->
+        <item>2.00</item><!-- Corporativo de muchisimo dinero, monopolio. -->
+    </string-array>
+
+    <string-array name="PrestigeValue">
+        <!--Refleja la confianza que le proporcionas al Cliente y la experiencia que tienes con
+proyectos como éste, o… quien quiera azul celeste, que le cueste.-->
+        <item>1.00</item><!-- El cliente no me conoce, tengo una cartera nula o pequeña que mostrale, Nunca he hecho un proyecto similar. -->
+        <item>1.30</item><!-- Tengo un decente portafolios que puede dar la suficiente confianza al cliente aunque nunca he hecho algo similar a lo que ahora pide. -->
+        <item>1.50</item><!-- Tengo un amplio portafolio que respalda mi trabajo y además tengo experiencia en proyectos como este. -->
+        <item>1.70</item><!-- He sido recomendado por una fuente de confianza al cliente, o él ha visto mis trabajos, tengo amplio portafolio que respalda mi trabajo y además experienci en proyectos similares. -->
+        <item>2.00</item><!-- El cliente cree que somos los mejores, nos percibe con una imagen corporativa, como si fuéramos una empresa seria y mundial. -->
+    </string-array>
+
+    <string-array name="ProjectImpact">
+        <!--Qué tanta importancia tendrá el proyecto en los negocios del cliente una vez terminado y
+en qué nivel de problemas te vas a meter si no funciona correctamente.-->
+        <item>1.00</item><!-- Nulo, si este proyecto se lleva a cabo o no, nadie se dará cuenta. -->
+        <item>1.20</item><!-- De imagen, discreto, proyecto de comunicación. -->
+        <item>1.30</item><!-- Medio, de imagen, haran anuncios en prensa y diversos medios para difundirlo. -->
+        <item>1.50</item><!-- Con impacto, este sistema proporcionará información para la toma de decisiones. -->
+        <item>2.00</item><!-- Mucho Impacto, varios de sus procesos de modificarán y estarán dictados por el sistema que deben crear y además le haremos ganar mucho dinero pero de no funcionar correctamente,tendré al cliente encima a toda hora. -->
+    </string-array>
+
+    <string-array name="Competition">
+        <!--Cuántos pueden hacer lo que hay que hacer para este proyecto y qué tan accesibles son
+para este Cliente.-->
+        <item>1.00</item><!-- Nadie, somos los únicos en la faz de la tierra. -->
+        <item>1.30</item><!-- No muchos, el cliente dificilmente los contactará. -->
+        <item>1.40</item><!-- Algunos. Que podrían ser contactados por este cliente. Que dicen ser capaces de desarrollar el proyecto -->
+        <item>1.70</item><!-- Varios, aún no han sido contactados por el cliente pero es cosa fácil de hacer. -->
+        <item>2.00</item><!-- Varios,y además, ya los contacto y también le estan cotizando el mismo proyecto (Licitación). -->
+    </string-array>
 </resources>
