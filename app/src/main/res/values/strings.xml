@@ -8,42 +8,79 @@
     <string name="prestigeValue">Tu Prestigio</string>
     <string name="projectImpact">Impacto</string>
     <string name="competition">Competencia</string>
-    
+
+    <string-array name="Definitions">
+        <item>Qué tan solvente es el Cliente o… Qué tan grande es el Pájaro.</item><!--Client-->
+        <item>Refleja la confianza que le proporcionas al Cliente y la experiencia que tienes con
+proyectos como éste, o… quien quiera azul celeste, que le cueste.</item><!--Prestige-->
+        <item>Qué tanta importancia tendrá el proyecto en los negocios del cliente una vez terminado y
+en qué nivel de problemas te vas a meter si no funciona correctamente.</item><!--Impact-->
+        <item>Cuántos pueden hacer lo que hay que hacer para este proyecto y qué tan accesibles son
+para este Cliente.</item>-<!--Competition-->
+    </string-array>
+
     <string-array name="ClientType">
         <!--Qué tan solvente es el Cliente o… Qué tan grande es el Pájaro.-->
-        <item>1.00</item><!-- Empresa Pequeña, de pocos empleados, trabaja vive y deja vivir. -->
-        <item>1.20</item><!-- Empresa Mediana a grande,buena solvencia economica, notiene muchos Empleados, no es lider en su industria. -->
-        <item>1.50</item><!-- Corporativo de mucho dinero, tiene varias descenas de empleados, bonitas oficinas, es reconocido como uno de los lideres en su industria. -->
-        <item>2.00</item><!-- Corporativo de muchisimo dinero, monopolio. -->
+        <item>1.00</item>
+        <item>1.20</item>
+        <item>1.50</item>
+        <item>2.00</item>
+    </string-array>
+    <string-array name="ClientDescription">
+        <item>Empresa Pequeña, de pocos empleados, trabaja vive y deja vivir.</item>
+        <item>Empresa Mediana a grande,buena solvencia economica, notiene muchos Empleados, no es lider en su industria.</item>
+        <item>Corporativo de mucho dinero, tiene varias descenas de empleados, bonitas oficinas, es reconocido como uno de los lideres en su industria.</item>
+        <item>Corporativo de muchisimo dinero, monopolio.</item>
     </string-array>
 
     <string-array name="PrestigeValue">
         <!--Refleja la confianza que le proporcionas al Cliente y la experiencia que tienes con
 proyectos como éste, o… quien quiera azul celeste, que le cueste.-->
-        <item>1.00</item><!-- El cliente no me conoce, tengo una cartera nula o pequeña que mostrale, Nunca he hecho un proyecto similar. -->
-        <item>1.30</item><!-- Tengo un decente portafolios que puede dar la suficiente confianza al cliente aunque nunca he hecho algo similar a lo que ahora pide. -->
-        <item>1.50</item><!-- Tengo un amplio portafolio que respalda mi trabajo y además tengo experiencia en proyectos como este. -->
-        <item>1.70</item><!-- He sido recomendado por una fuente de confianza al cliente, o él ha visto mis trabajos, tengo amplio portafolio que respalda mi trabajo y además experienci en proyectos similares. -->
-        <item>2.00</item><!-- El cliente cree que somos los mejores, nos percibe con una imagen corporativa, como si fuéramos una empresa seria y mundial. -->
+        <item>1.00</item>
+        <item>1.30</item>
+        <item>1.50</item>
+        <item>1.70</item>
+        <item>2.00</item>
+    </string-array>
+    <string-array name="PrestigeDescription">
+        <item>El cliente no me conoce, tengo una cartera nula o pequeña que mostrale, Nunca he hecho un proyecto similar.</item>
+        <item>Tengo un decente portafolios que puede dar la suficiente confianza al cliente aunque nunca he hecho algo similar a lo que ahora pide.</item>
+        <item>Tengo un amplio portafolio que respalda mi trabajo y además tengo experiencia en proyectos como este.</item>
+        <item>He sido recomendado por una fuente de confianza al cliente, o él ha visto mis trabajos, tengo amplio portafolio que respalda mi trabajo y además experienci en proyectos similares.</item>
+        <item>El cliente cree que somos los mejores, nos percibe con una imagen corporativa, como si fuéramos una empresa seria y mundial.</item>
     </string-array>
 
     <string-array name="ProjectImpact">
         <!--Qué tanta importancia tendrá el proyecto en los negocios del cliente una vez terminado y
 en qué nivel de problemas te vas a meter si no funciona correctamente.-->
-        <item>1.00</item><!-- Nulo, si este proyecto se lleva a cabo o no, nadie se dará cuenta. -->
-        <item>1.20</item><!-- De imagen, discreto, proyecto de comunicación. -->
-        <item>1.30</item><!-- Medio, de imagen, haran anuncios en prensa y diversos medios para difundirlo. -->
-        <item>1.50</item><!-- Con impacto, este sistema proporcionará información para la toma de decisiones. -->
-        <item>2.00</item><!-- Mucho Impacto, varios de sus procesos de modificarán y estarán dictados por el sistema que deben crear y además le haremos ganar mucho dinero pero de no funcionar correctamente,tendré al cliente encima a toda hora. -->
+        <item>1.00</item>
+        <item>1.20</item>
+        <item>1.30</item>
+        <item>1.50</item>
+        <item>2.00</item>
+    </string-array>
+    <string-array name="ImpactDescription">
+        <item>Nulo, si este proyecto se lleva a cabo o no, nadie se dará cuenta.</item>
+        <item>De imagen, discreto, proyecto de comunicación.</item>
+        <item>Medio, de imagen, haran anuncios en prensa y diversos medios para difundirlo.</item>
+        <item>Con impacto, este sistema proporcionará información para la toma de decisiones.</item>
+        <item>Mucho Impacto, varios de sus procesos de modificarán y estarán dictados por el sistema que deben crear y además le haremos ganar mucho dinero pero de no funcionar correctamente,tendré al cliente encima a toda hora.</item>
     </string-array>
 
     <string-array name="Competition">
         <!--Cuántos pueden hacer lo que hay que hacer para este proyecto y qué tan accesibles son
 para este Cliente.-->
-        <item>1.00</item><!-- Nadie, somos los únicos en la faz de la tierra. -->
-        <item>1.30</item><!-- No muchos, el cliente dificilmente los contactará. -->
-        <item>1.40</item><!-- Algunos. Que podrían ser contactados por este cliente. Que dicen ser capaces de desarrollar el proyecto -->
-        <item>1.70</item><!-- Varios, aún no han sido contactados por el cliente pero es cosa fácil de hacer. -->
-        <item>2.00</item><!-- Varios,y además, ya los contacto y también le estan cotizando el mismo proyecto (Licitación). -->
+        <item>1.00</item>
+        <item>1.30</item>
+        <item>1.40</item>
+        <item>1.70</item>
+        <item>2.00</item>
+    </string-array>
+    <string-array name="CompetitionDescription">
+        <item>Nadie, somos los únicos en la faz de la tierra.</item>
+        <item>No muchos, el cliente dificilmente los contactará.</item>
+        <item>Algunos. Que podrían ser contactados por este cliente. Que dicen ser capaces de desarrollar el proyecto.</item>
+        <item>Varios, aún no han sido contactados por el cliente pero es cosa fácil de hacer.</item>
+        <item>Varios,y además, ya los contacto y también le estan cotizando el mismo proyecto (Licitación).</item>
     </string-array>
 </resources>
