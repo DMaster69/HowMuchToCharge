@@ -9,6 +9,11 @@
     <string name="projectImpact">Impacto</string>
     <string name="competition">Competencia</string>
 
+    <string name="costDescription">Aquí deben precisar sus costos, por lo
+pronto consideren su sueldo por hora o el de sus colaboradores o equipo de trabajo, renta
+de la oficina, internet, electricidad, Pasajes, etc. y divide todo entre la cantidad de horas
+que están estimadas para el desarrollo del proyecto </string>
+
     <string-array name="Definitions">
         <item>Qué tan solvente es el Cliente o… Qué tan grande es el Pájaro.</item><!--Client-->
         <item>Refleja la confianza que le proporcionas al Cliente y la experiencia que tienes con

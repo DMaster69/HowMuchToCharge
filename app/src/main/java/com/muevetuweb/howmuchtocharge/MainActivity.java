@@ -1,22 +1,28 @@
 package com.muevetuweb.howmuchtocharge;
 
+import android.app.Activity;
+import android.media.Image;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.DecimalFormat;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
     private SeekBar skb1,skb2,skb3,skb4;
-    private TextView lblItemDescription,lblResult;
+    private TextView lblItemDescription,lblResult,lblCosts;
     private EditText txfCosts;
     private float clientVal=1,prestigeVal=1,impactVal=1,competitionVal=1,costsVal=1;
     DecimalFormat formatoMoneda = new DecimalFormat("#,###");
@@ -26,8 +32,11 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         lblItemDescription = (TextView) findViewById(R.id.lblItemDescription);
         lblResult = (TextView) findViewById(R.id.lblResult);
+        lblCosts = (TextView) findViewById(R.id.lblCostos);
+
         txfCosts = (EditText) findViewById(R.id.txfCosts);
 
         skb1 = (SeekBar) findViewById(R.id.barClient);
@@ -44,6 +53,13 @@ public class MainActivity extends ActionBarActivity {
         skb2.setOnSeekBarChangeListener(listenerSeek());
         skb3.setOnSeekBarChangeListener(listenerSeek());
         skb4.setOnSeekBarChangeListener(listenerSeek());
+
+        lblCosts.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),R.string.costDescription,Toast.LENGTH_LONG).show();
+            }
+        });
 
         txfCosts.addTextChangedListener(new TextWatcher() {
 
@@ -137,8 +153,10 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public float calculate(){
-        if(costsVal>1)
-            return (costsVal*clientVal*prestigeVal*impactVal)/competitionVal;
+        if(costsVal>1){
+            float fc = (costsVal*clientVal*prestigeVal*impactVal)/competitionVal;
+            return (fc<costsVal)?costsVal:fc;
+        }
         return 0;
     }
     @Override
