@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">HowMuchToCharge</string>
 
+    <string name="banner_ad_unit_id">ca-app-pub-7009001815107311/8880261733</string>
+
     <string name="app_title">¿Cuanto cobrar por un desarrollo?</string>
     <string name="action_settings">Settings</string>
     <string name="YourCosts">Costos</string>

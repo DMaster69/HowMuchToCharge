@@ -19,6 +19,8 @@ import android.widget.Toast;
 
 import java.text.DecimalFormat;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 public class MainActivity extends Activity {
     private SeekBar skb1,skb2,skb3,skb4;
@@ -32,6 +34,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         lblItemDescription = (TextView) findViewById(R.id.lblItemDescription);
         lblResult = (TextView) findViewById(R.id.lblResult);
